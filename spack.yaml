@@ -23,8 +23,11 @@ spack:
       require: '@2.5.2'
     openmpi:
       require: '@4.0.2'
+    # Specifications that apply to all packages
     all:
-      compiler: [intel@19.0.5.281]
+      require:
+        - '%intel@19.0.5.281'
+        - 'target=x86_64'
   view: true
   concretizer:
     unify: true
