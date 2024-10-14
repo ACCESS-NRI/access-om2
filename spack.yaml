@@ -6,23 +6,15 @@ spack:
   # add package specs to the `specs` list
   specs:
     - access-om2@git.2024.03.0
+    - cice5@git.2023.10.19
+    - mom5@git.2023.11.09
+    - libaccessom2@git.2023.10.26
+    - oasis3-mct@git.2023.11.09
+    - netcdf-c@4.7.4
+    - netcdf-fortran@4.5.2
+    - parallelio@2.5.2
+    - openmpi@4.0.2
   packages:
-    cice5:
-      require: '@git.2023.10.19'
-    mom5:
-      require: '@git.2023.11.09'
-    libaccessom2:
-      require: '@git.2023.10.26'
-    oasis3-mct:
-      require: '@git.2023.11.09'
-    netcdf-c:
-      require: '@4.7.4'
-    netcdf-fortran:
-      require: '@4.5.2'
-    parallelio:
-      require: '@2.5.2'
-    openmpi:
-      require: '@4.0.2'
     # Specifications that apply to all packages
     all:
       require:
